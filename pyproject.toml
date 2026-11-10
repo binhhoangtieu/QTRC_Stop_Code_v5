@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "qtrc-stop"
+version = "5.0.0"
+description = "Controlled multi-seed subject-disjoint taxonomic-risk-constrained early classification for Polliradar mmWave micro-Doppler signals"
+requires-python = ">=3.10"
+dependencies = [
+  "numpy>=1.24",
+  "pandas>=2.0",
+  "scipy>=1.10",
+  "scikit-learn>=1.4",
+  "joblib>=1.3",
+  "PyYAML>=6.0",
+  "matplotlib>=3.7",
+  "catboost>=1.2"
+]
+
+[project.scripts]
+qtrc-stop = "qtrc_stop.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]

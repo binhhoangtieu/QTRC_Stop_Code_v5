@@ -1,0 +1,2 @@
+[console_scripts]
+qtrc-stop = qtrc_stop.cli:main
